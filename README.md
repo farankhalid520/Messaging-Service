@@ -82,6 +82,8 @@ This guide provides instructions for testing the messaging service API endpoints
  **Description**:
  This endpoint allows you to send a message to a specific recipient.
 
+ ![image alt](https://github.com/farankhalid520/Messaging-Service/blob/7377c22767b2782d05f0f2d4028d8a9a58be1064/screenshots/POST%20Message.png)
+
 ### 2. **Fetch Messages by Status (GET)**
 
 **Endpoint**:  
@@ -106,6 +108,9 @@ This endpoint allows you to retrieve messages based on their read/unread status.
   
 **Response**:  
 - The response will return a list of messages filtered by the specified status.
+![image alt](https://github.com/farankhalid520/Messaging-Service/blob/7377c22767b2782d05f0f2d4028d8a9a58be1064/screenshots/GET%20read.png)
+
+![image alt](https://github.com/farankhalid520/Messaging-Service/blob/7377c22767b2782d05f0f2d4028d8a9a58be1064/screenshots/GET%20unread.png)
 
 ### 3. **Delete a Single Message (DEL)**
 
@@ -126,7 +131,9 @@ This endpoint allows you to delete a single message from the database using its 
 
 **Response**:  
 - A success message indicating that the message has been deleted, or an error message if the message ID does not exist.
-  
+
+ ![image alt](https://github.com/farankhalid520/Messaging-Service/blob/7377c22767b2782d05f0f2d4028d8a9a58be1064/screenshots/DEL%20one.png)
+ 
 ### 4. **Delete Multiple Messages (DEL)**
 
 **Endpoint**:  
@@ -162,6 +169,8 @@ This endpoint allows you to delete multiple messages from the database within a 
    {
      "message": "0 messages deleted between IDs 10 and 14"
    }
+
+ ![image alt](https://github.com/farankhalid520/Messaging-Service/blob/7377c22767b2782d05f0f2d4028d8a9a58be1064/screenshots/DEL%20multiple.png)   
 
 
 ### 5. **Fetch Messages (Including Previously Fetched) Ordered by Time and Index (GET)**
@@ -205,6 +214,8 @@ This endpoint retrieves messages between the specified `start_id` and `stop_id`,
       }
     ]
   }
+
+![image alt](https://github.com/farankhalid520/Messaging-Service/blob/7377c22767b2782d05f0f2d4028d8a9a58be1064/screenshots/GET%20multiple.png) 
 
   ---
 
